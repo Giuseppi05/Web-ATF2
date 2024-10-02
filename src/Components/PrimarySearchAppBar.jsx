@@ -12,6 +12,11 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import Tooltip from '@mui/material/Tooltip';
 import { Link } from 'react-router-dom';
 import { Typography, Divider, Popover, List, ListItem, ListItemAvatar, Avatar, ListItemText, Button, ListItemIcon } from '@mui/material';
+import Avatar1 from "/images/avatar-1.png"
+import Avatar2 from "/images/avatar-2.jpeg"
+import Avatar3 from "/images/avatar-3.png"
+import logo from "/logo-v2.png";
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -98,19 +103,19 @@ export default function PrimarySearchAppBar({ handleDrawerToggle }) {
         <List>
           <ListItem divider>
             <ListItemAvatar>
-              <Avatar src="../assets/images/avatar-1.png" alt="Central" />
+              <Avatar src={Avatar1} alt="Central" />
             </ListItemAvatar>
             <ListItemText primary="Central" secondary="Nos gustaría ser parte de este proyecto." />
           </ListItem>
           <ListItem divider>
             <ListItemAvatar>
-              <Avatar src="../assets/images/avatar-2.jpeg" alt="Granja Azul" />
+              <Avatar src={Avatar2} alt="Granja Azul" />
             </ListItemAvatar>
             <ListItemText primary="Granja Azul" secondary="Estamos interesados." />
           </ListItem>
           <ListItem >
             <ListItemAvatar>
-              <Avatar src="../assets/images/avatar-3.png" alt="Madam Tusan" />
+              <Avatar src={Avatar3} alt="Madam Tusan" />
             </ListItemAvatar>
             <ListItemText primary="Madam Tusan" secondary="Necesitamos más información." />
           </ListItem>
@@ -240,7 +245,7 @@ export default function PrimarySearchAppBar({ handleDrawerToggle }) {
               color="inherit"
               component={Link} to="/"
             >
-              <Avatar src="../logo.png" alt="Foodmatch" />
+              <Avatar src={logo} alt="Foodmatch" />
             </IconButton>
             
             </Tooltip>
