@@ -61,7 +61,7 @@ function ResponsiveDrawer(props) {
 
       <List>
         <ListItem key={"Dashboard"} disablePadding onClick={handleDrawerClose}>
-          <ListItemButton component={Link} to="/">
+          <ListItemButton component={Link} to="">
             <ListItemIcon><Dashboard /></ListItemIcon>
             <ListItemText primary={"Dashboard"} />
           </ListItemButton>
@@ -136,7 +136,7 @@ function ResponsiveDrawer(props) {
           sx={{ pt: 8, px: 5, width: { sm: `calc(100% - ${drawerWidth}px)` }, boxSizing: "border-box" }}
         >
           <Routes>
-            <Route path="/" element={<FoodMatchDashboard />} />
+            <Route path="" element={<FoodMatchDashboard />} />
             <Route path="/restaurants" element={<RestaurantsPage />} />
             <Route path="/users" element={<UsuariosPage />} />
           </Routes>
