@@ -82,7 +82,7 @@ const UsuariosPage = () => {
           sx={{ 
             marginBottom: '20px', 
             color: '#333', 
-            textAlign: {xs:"center",md:"start"} }}
+            textAlign: "start"}}
           > 
           Dashboard / Páginas / Usuarios
           </Typography> 
