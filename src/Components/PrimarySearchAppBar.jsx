@@ -98,19 +98,19 @@ export default function PrimarySearchAppBar({ handleDrawerToggle }) {
         <List>
           <ListItem divider>
             <ListItemAvatar>
-              <Avatar src="/src/assets/images/avatar-1.png" alt="Central" />
+              <Avatar src="../assets/images/avatar-1.png" alt="Central" />
             </ListItemAvatar>
             <ListItemText primary="Central" secondary="Nos gustaría ser parte de este proyecto." />
           </ListItem>
           <ListItem divider>
             <ListItemAvatar>
-              <Avatar src="/src/assets/images/avatar-2.jpeg" alt="Granja Azul" />
+              <Avatar src="../assets/images/avatar-2.jpeg" alt="Granja Azul" />
             </ListItemAvatar>
             <ListItemText primary="Granja Azul" secondary="Estamos interesados." />
           </ListItem>
           <ListItem >
             <ListItemAvatar>
-              <Avatar src="/src/assets/images/avatar-3.png" alt="Madam Tusan" />
+              <Avatar src="../assets/images/avatar-3.png" alt="Madam Tusan" />
             </ListItemAvatar>
             <ListItemText primary="Madam Tusan" secondary="Necesitamos más información." />
           </ListItem>
@@ -240,7 +240,7 @@ export default function PrimarySearchAppBar({ handleDrawerToggle }) {
               color="inherit"
               component={Link} to="/"
             >
-              <Avatar src="/logo.png" alt="Madam Tusan" />
+              <Avatar src="../logo.png" alt="Foodmatch" />
             </IconButton>
             
             </Tooltip>
