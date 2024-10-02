@@ -1,6 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -61,7 +61,7 @@ function ResponsiveDrawer(props) {
 
       <List>
         <ListItem key={"Dashboard"} disablePadding onClick={handleDrawerClose}>
-          <ListItemButton component={Link} to="">
+          <ListItemButton component={Link} to="/">
             <ListItemIcon><Dashboard /></ListItemIcon>
             <ListItemText primary={"Dashboard"} />
           </ListItemButton>
@@ -136,9 +136,11 @@ function ResponsiveDrawer(props) {
           sx={{ pt: 8, px: 5, width: { sm: `calc(100% - ${drawerWidth}px)` }, boxSizing: "border-box" }}
         >
           <Routes>
-            <Route path="" element={<FoodMatchDashboard />} />
+            <Route path="/" element={<Navigate to="/dashboard" replace />} />
+            <Route path="/dashboard" element={<FoodMatchDashboard />} />
             <Route path="/restaurants" element={<RestaurantsPage />} />
             <Route path="/users" element={<UsuariosPage />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <Footer />
         </Box>
