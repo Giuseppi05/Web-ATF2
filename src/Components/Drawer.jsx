@@ -133,7 +133,7 @@ function ResponsiveDrawer(props) {
 
         <Box
           component="main"
-          sx={{ pt: 8, px: 5, width: { sm: `calc(100% - ${drawerWidth}px)` }, boxSizing: "border-box" }}
+          sx={{ pt: 8, px: {xs:2, md:5}, width: { xs:"100vw", sm: `calc(100% - ${drawerWidth}px)` }, boxSizing: "border-box" }}
         >
           <Routes>
             <Route path="/" element={<Navigate to="/dashboard" replace />} />
